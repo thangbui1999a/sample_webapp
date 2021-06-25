@@ -17,7 +17,7 @@ pipeline {
             }
             post {
                 always {
-                    archiveArtifacts './jenkins_output.zip'
+                    archiveArtifacts 'jenkins_output.zip'
                 }
             }
         }
