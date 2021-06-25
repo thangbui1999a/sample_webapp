@@ -13,6 +13,7 @@ waitPort({
   port: 9999
 })
   .then((open) => {
+  	console.log('server is ready');
     process.exit(0);
   })
   .catch((err) => {
