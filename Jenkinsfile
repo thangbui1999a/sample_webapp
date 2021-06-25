@@ -12,7 +12,7 @@ pipeline {
          stage('test') {
                    
             steps {
-                    sh 'krcli --browser "chrome" --extension "/home/bthang/Desktop/src" -t "./test/webapp.html" --driver "/home/bthang/Downloads/chromedriver_linux64/chromedriver" --task-name "from jenkins256"' 
+                    sh 'xvfb-run krcli --browser "chrome" --extension "/home/bthang/Desktop/src" -t "./test/webapp.html" --driver "/home/bthang/Downloads/chromedriver_linux64/chromedriver" --task-name "from jenkins256"' 
             }
         }
   
