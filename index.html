@@ -62,13 +62,16 @@
 
     	let email = document.getElementById('exampleInputEmail1').value;
     	let password = document.getElementById('exampleInputPassword1').value;
-    	let resultState = 'login successfully!';
+    	let resultState = 'Login successfully!';
+    	let resultColor = 'green';
 
     	if(email !== 'admin@gmail.com' || password !== 'admin') {
-    		resultState = 'login failed!';
+    		resultState = 'Login failed!';
+    		resultColor = 'red';
     	}
 
     	document.getElementById('divLoginState').innerText = resultState;
+    	document.getElementById('divLoginState').style.color = resultColor;
 
     });
 
